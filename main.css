@@ -204,13 +204,13 @@ margin-right: 10px;
 	background: #F4F4F5;
 	display: flex;
 	padding: 30px;
-	height: 200vh;
 }
 .card{
 	width: 30%;
 	background: white;
 	margin-right: 3%;
 	height: 430px;
+	border-radius: 6px;
 }
 .card h3{
 	font-size: 16px;
@@ -229,8 +229,54 @@ margin-right: 10px;
 .card1 .img,.card2 .img,.card3 .img{
 	width: 100%;
 	height: 230px;
-	background: url("images/Mobile-App-vs-Mobile-Web-Feature.png");
+	border-radius: 6px 6px 0px 0px;
 }
+.card1 .img1{
+	background: url("images/Mobile-App-vs-Mobile-Web-Feature.png");
+	background-size: 244%;
+    background-position: -350px;
+}
+
+.card2 .img2{
+	background: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.card3 .img3{
+	background-size: 100%;
+background: url("images/img3.jpg");
+	background-position: -10px -42px;
+}
+.img2 .u{
+	color: white;
+	border:13px solid white;
+	font-weight: bold;
+	font-family: arial;
+	border-radius: 85px;
+	margin-right: 30px;
+	height: 85px;
+	width: 85px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.u p{
+	font-weight: bold;
+	font-size: 55px;
+}
+.img2 .i{
+	color: white;
+	border:10px solid white;
+	font-size: 55px;
+	font-weight: bold;
+	font-style: bold;
+	font-family: arial;
+	padding: 10px;
+	width: 57px;
+	text-align: center;
+}
+
 .midtext{
 	font-size: 20px;
 	letter-spacing: .5px;
@@ -287,10 +333,73 @@ margin-right: 10px;
 	font-weight: bold;
 	color: #7E7E7E;
 }
+.does{
+	background:#F4F4F5;
+	justify-content: center;
+	padding: 50px 80px 50px 120px;
+}
+.contactme{
+	height: 100vh;
+	background:white;
+}
+.h1cover{
+	widows: 100vw;
+}
+.does h1{
+	margin: 0px;
+	text-align: center;
+	background:#c35943;
+	width: 500px;
+	height: 41px;
+	color: white;
+	font-family: arial;
+	font-weight: bold;
+	padding: 10px;
+	margin-left: 20%;
+	margin-bottom: 50px;
+	    letter-spacing: 1px;
+    word-spacing: 6px;
+}
+.content{
+	display: flex;
+	padding: 0px 0px 0px 80px;
+}
+.content img{
+	height: 214px;
+	margin-right: 50px;
+} 
+.content .text{
+	font-size: 20px;
+	font-family: sans-serif;
+	color: #887a7f;
+	width: 550px;
+	margin-top: 50px;
+}
+@media (max-width: 1125px){
+.does h1{
+	margin-left: 20%;
+}
+.card1 .img1{
+	background-size: 267%;
+	background-position: -350px;
+}
+@media(max-width: 1044px){
+	.card1 .img1{
+	background-size: 313%;
+	background-position: -400px;
+}
+}
 @media (max-width: 880px){
+	.does h1{
+	margin-left: 10%;
+}
 .cards{
 	padding-top: 50px;
 	padding-left: 22%;
+}
+.card1 .img1{
+	background-size: 213%;
+	background-position: -400px;
 }
 .card{
 	width: 70%;
@@ -384,7 +493,59 @@ transform: rotate(-45deg);
 	width: 100px;
 }
 }
+
+@media (max-width: 745px){
+	.does h1{
+	margin-left: 5%;
+	width: 90%;
+	font-size: 30px;
+	padding: 10px;
+}
+.does .content{
+	padding-left: 0px;
+	padding-right: 0px;
+	flex-direction: column;
+}
+.does .content img{
+	height: 180px;
+	margin-right: 0px;
+}
+.does .content .text{
+	width: 100%;
+}
+	.card1 .img1{
+	background-size: 270%;
+	background-position: -400px;
+}
+}
+@media (max-width: 670px){
+.does h1{
+	font-size: 24px;
+}
+}
 @media (max-width: 575.98px){
+	.does {
+		padding:0px 20px;
+	}
+	.does  h1{
+		width: 90%;
+		font-size: 22px;
+		height: 30px;
+		margin-bottom: 30px;
+		margin-left: 5px;
+	}
+	.does .content img {
+		height: 160px;
+	}
+	.does .content .text{
+		width:85%;
+		margin-left: 7%;
+		margin-top: 30px;
+	}
+	.card1 .img1{
+	background-size: 260%;
+	background-position: -360px;
+}
 	.cards{
 	padding-top: 50px;
 	padding-left: 7%;
@@ -431,4 +592,10 @@ transform: rotate(-45deg);
 	.git{
 		margin-top: 12px;
 	}
+}
+@media (max-width: 325px){
+	.card1 .img1{
+	background-size: 300%;
+	background-position: -350px;
+}
 }
