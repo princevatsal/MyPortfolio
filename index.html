@@ -6,6 +6,7 @@
 	<title>Priyansh Vatsal</title>
 	<link rel="stylesheet" href="main.css">
 	<link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="push.css">
 </head>
 <body>
 	<div class="first">
@@ -15,8 +16,8 @@
 	  </div>
 	  <h1>Portfolio</h1>
 	  <div><a href="https://github.com/princevatsal" class="git">GitHub</a></div>
-	  <ul>
-	  	<li>About</li>
+	  <ul class="navul">
+	  	<li style="color: white">About</li>
 	  	<li>Projects</li>
 	  	<li>Contact</li>
 	  </ul>
@@ -31,14 +32,14 @@
 			<h1>Hello! I am Priyansh </h1>
 			<p>I develop websites . I am experienced developer in Lorem ipsum dolor<br> sit amet. Lorem ipsum dolor sit amet, </p>
 			<div class="acover">
-				<a href="">View More</a>
+				<a class="viewmore">View More</a>
 			</div>
 		</div>
 		<div class="imgcover">
 			<img src="images/me2a.jpg">
 		</div>
 	</div>
-	<div class="bar">
+	<div class="bar" id="bar">
 		<div class="btn1">
 			<p>Projects</p>
 			<div class="icon1">
@@ -46,6 +47,11 @@
 				<div class="l2"></div>
 			</div>
 		</div>
+		<ul class="ul1">
+			<li class="liactive">Projects</li>
+			<li>Skills</li>
+			<li id="diffcon">contact</li>
+		</ul>
 		<div class="rightcover">
 		<div class="btn2">
 			<div class="icon2">
@@ -55,6 +61,11 @@
 			</div>
 			<p>Website</p>
 		</div>
+		<ul class="ul2">
+			<li class="liactive">website</li>
+			<li>design</li>
+			<li id="diffcon">Script</li>
+		</ul>
 		<div class="foursq">
 			<div class="box1"></div>
 			<div class="box2"></div><br>
@@ -63,6 +74,10 @@
 		</div>
 		</div>
 	</div>
+	<!-- <div class="menus"> -->
+		
+		
+	<!-- </div> -->
 	<div class="midtext">These all project are developed 
 and designed by me </div>
 	<div class="cards">
@@ -138,7 +153,11 @@ and designed by me </div>
 		</div>
 	</div>
 	<div class="contactme">
-		
+		<h1 class="coolh1">Want to Contact me </h1>
+		<div class="btns">
+		<div class="cont1"><img src="images/gmail.png" alt=""><p>Email</p></div>
+		<div class="cont2"><img src="images/call.png" alt=""><p>Phone</p></div>
+		</div>
 	</div>
 	<script src="index.js"></script>
 </body>
