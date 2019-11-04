@@ -16,6 +16,9 @@ const button2=document.querySelector('.bar .btn2')
 const button2ul=document.querySelector('.bar .ul2')
 const i1=document.querySelector('.icon1 .l1')
 const i2=document.querySelector('.icon1 .l2')
+const icon2=document.querySelector('.icon2')
+const listlis=document.querySelectorAll('.ul1 li')
+const listlis2=document.querySelectorAll('.ul2 li')
 btn.addEventListener('click',()=>{
 	if(bar1.className=='animatespan')
 	{
@@ -66,20 +69,68 @@ lis[2].addEventListener('click',()=>{
 		setTimeout(()=>{lis[2].style.color='#999'},1000)
 })
 button1.addEventListener('click',()=>{
-	console.log('click',button1ul)
 	if(button1ul.style.display!='block'){
-		console.log('!!!')
 		button1ul.style.display='block'
 		i1.style.transform="rotate(-48deg)"
 		i2.style.transform='rotate(46deg)'
 	}else{
 		button1ul.style.display='none'
+		i1.style.transform="rotate(35deg)"
+		i2.style.transform='rotate(-35deg)'
 	}
 })
 button2.addEventListener('click',()=>{
-	if(button2ul.style.display=='none'){
+	if(button2ul.style.display!='block'){
 		button2ul.style.display='block'
+		icon2.style.flexDirection='column-reverse'
 	}else{
 		button2ul.style.display='none'
+		icon2.style.flexDirection='column'
 	}
+})
+document.addEventListener('click', function(event) {
+  var isClickInside = button1ul.contains(event.target) || button1.contains(event.target);
+
+  if (!isClickInside) {
+    if(button1ul.style.display!='none'){button1ul.style.display='none'}
+  }
+});
+document.addEventListener('click', function(event) {
+  var isClickInside = button2ul.contains(event.target) || button2.contains(event.target);
+
+  if (!isClickInside) {
+    if(button2ul.style.display!='none'){button2ul.style.display='none'}
+  }
+});
+listlis.forEach((li)=>{
+	li.addEventListener('click',(e)=>{
+		counter=null;
+		e.target.className='liactive'
+		for(let i=0;i<3;i++){
+			if(listlis[i].innerHTML!=e.target.innerHTML){
+				listlis[i].className=''
+			}else{
+				counter=i+1;
+			}
+		}
+		if(counter==1){
+			window.scroll(0,500)
+		}
+		if(counter==2){
+			window.scroll(0,1000)
+		}
+		if(counter==3){
+			window.scroll(0,1300)
+		}
+	})
+})
+listlis2.forEach((li)=>{
+	li.addEventListener('click',(e)=>{
+		e.target.className='liactive'
+		for(let i=0;i<3;i++){
+			if(listlis2[i].innerHTML!=e.target.innerHTML){
+				listlis2[i].className=''
+			}
+		}
+	})
 })

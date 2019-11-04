@@ -152,6 +152,7 @@ margin-right: 10px;
 	height: 2px;
 	width: 10px;
 	background: #707070;
+	transition: .3s;
 }
 .icon1 .l1{
 	transform-origin: top-left;
@@ -166,6 +167,8 @@ margin-right: 10px;
 .icon2{
 	margin-right: 11px;
 	margin-top: 3px;
+	display: flex;
+    flex-direction: column;
 }
 .icon2 .l1,.icon2 .l2,.icon2 .l3{
 	background:#707070;
@@ -452,7 +455,7 @@ background: url("images/img3.jpg");
 	padding-bottom: 30px;
 	background: white;
 	position: absolute;
-	bottom:-28px;
+	bottom:-3px;
 	display: none;
 }
 .liactive{
@@ -481,8 +484,9 @@ background: url("images/img3.jpg");
 	padding-bottom: 30px;
 	background: white;
 	position: absolute;
-	bottom:-28px;
+	bottom:-3px;
 	display: none;
+	z-index: 1;
 }
 #diffcon{
 	border-bottom: 1px solid #D8DDE2;
@@ -494,7 +498,7 @@ background: url("images/img3.jpg");
 .card1 .img1{
 	background-size: 267%;
 	background-position: -350px;
-}
+}}
 @media(max-width: 1044px){
 	.card1 .img1{
 	background-size: 313%;
@@ -611,6 +615,9 @@ transform: rotate(-45deg);
 .bar .btn1,.btn2{
 	border:.5px solid #BDBDBD;
 }
+.ul1,.ul2{
+	bottom: 10px;
+}
 }
 
 @media (max-width: 745px){
@@ -654,6 +661,9 @@ transform: rotate(-45deg);
 .content{
 	padding-bottom: 40px;
 }
+.ul1,.ul2{
+	bottom: 10px;
+}
 }
 @media (max-width: 670px){
 .does h1{
@@ -661,6 +671,15 @@ transform: rotate(-45deg);
 }
 }
 @media (max-width: 575.98px){
+	.ul1, .ul2 {
+    bottom: -64px;
+}
+	.ul1{
+		width: 172px;
+	}
+	.ul2{
+		width:150px;
+	}
 	.does {
 		padding:0px 20px;
 	}
@@ -729,6 +748,10 @@ transform: rotate(-45deg);
 	.git{
 		margin-top: 12px;
 	}
+	
+	.ul1, .ul2 {
+    bottom: 55px;
+}
 }
 @media (max-width: 325px){
 	.card1 .img1{
@@ -736,20 +759,36 @@ transform: rotate(-45deg);
 	background-position: -350px;
 }
 }
+@media (max-height: 780px){
+.ul1, .ul2 {
+    bottom: 16px;
+}
+}
 @media (max-height: 730px){
 	.second{
 		height: 55vh;
-	}
+
 }
 @media (max-height: 680px){
 	.second{
 		height: 62vh;
 	}
+	.ul1,.ul2{
+	bottom: -56px;
+}
+@media (max-height: 650px){
+	.ul1, .ul2 {
+    bottom: -65px;
+}
+}
 }
 @media (max-height: 600px){
 	.second{
 		height: 77vh;
 	}
+	.ul1, .ul2 {
+    bottom: -172px;
+}
 }
 @media (min-height: 770px){
 	.second{
@@ -759,4 +798,5 @@ transform: rotate(-45deg);
 	.coolh1{
 		width: 269px;
 	}
+
 }
