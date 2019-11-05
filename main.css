@@ -767,18 +767,21 @@ transform: rotate(-45deg);
 @media (max-height: 730px){
 	.second{
 		height: 55vh;
-
+}
+.ul1,.ul2{
+	bottom: -25px;
+}
 }
 @media (max-height: 680px){
 	.second{
 		height: 62vh;
 	}
 	.ul1,.ul2{
-	bottom: -56px;
+	bottom: -90px;
 }
 @media (max-height: 650px){
 	.ul1, .ul2 {
-    bottom: -65px;
+    bottom: -105px;
 }
 }
 }

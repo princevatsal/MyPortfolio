@@ -19,6 +19,9 @@ const i2=document.querySelector('.icon1 .l2')
 const icon2=document.querySelector('.icon2')
 const listlis=document.querySelectorAll('.ul1 li')
 const listlis2=document.querySelectorAll('.ul2 li')
+const togglelis=document.querySelectorAll('.toggleul li')
+const contactme=document.querySelector('.contactme')
+const  second=document.querySelector('.second')
 btn.addEventListener('click',()=>{
 	if(bar1.className=='animatespan')
 	{
@@ -133,4 +136,13 @@ listlis2.forEach((li)=>{
 			}
 		}
 	})
+})
+togglelis[0].addEventListener('click',(e)=>{
+	second.scrollIntoView();
+})
+togglelis[1].addEventListener('click',(e)=>{
+	button1.scrollIntoView();
+})
+togglelis[2].addEventListener('click',(e)=>{
+	contactme.scrollIntoView();
 })
